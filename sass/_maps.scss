@@ -1,0 +1,15 @@
+/*MAPS*/
+
+/*iconos del footer y contacto*/
+$redes: (
+  facebook: rgb(81, 98, 248),
+  instagram: rgb(224, 104, 67),
+  twitter: rgb(10, 195, 241),
+  whatsapp: rgb(12, 182, 26),
+);
+
+@each $red, $color in $redes {
+  .bi-#{$red} {
+    color: $color;
+  }
+}

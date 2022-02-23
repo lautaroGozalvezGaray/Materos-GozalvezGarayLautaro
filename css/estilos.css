@@ -8,7 +8,6 @@ body {
   display: grid;
   grid-template-areas: "header" "main" "footer"; }
 
-/*Variables*/
 /*MAPS*/
 /*iconos del footer y contacto*/
 .bi-facebook {
@@ -22,37 +21,6 @@ body {
 
 .bi-whatsapp {
   color: #0cb61a; }
-
-/*mixin sin parametro*/
-.titleEachProduct, .productDest {
-  display: flex;
-  justify-content: center;
-  flex-direction: row; }
-
-/*maps-get aplicado a titulo principal productos destacados del index*/
-.productDest h2 {
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  margin-top: 2.5rem;
-  background-color: #eeeeee;
-  width: 80%;
-  border-radius: 15px; }
-
-/*EXTEND*/
-.howToBuy, .divParragrph {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  gap: 2.5rem; }
-
-.divParragrph {
-  align-items: center;
-  text-align: center;
-  gap: 2rem;
-  margin-top: 0;
-  margin-bottom: 0; }
 
 /*ESTILOS DEL NAV*/
 header {
@@ -93,19 +61,17 @@ header {
 /*---------DESKTOP-----------*/
 @media (min-width: 1024px) {
   .main {
-    grid-area: main;
-    /*.productDest {
+    grid-area: main; }
+    .main .productDest {
       display: flex;
       flex-direction: row;
-      justify-content: center;
-      h2 {
+      justify-content: center; }
+      .main .productDest h2 {
         text-align: center;
-        font-family: $fontAllPage;
+        font-family: "Open Sans", sans-serif;
         margin-top: 2.5rem;
-        background-color: $background;
-        width: 80%;
-      }
-    }*/ }
+        background-color: #eeeeee;
+        width: 80%; }
     .main .productDestImg {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -136,19 +102,17 @@ header {
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
-    /*.productDest {
+    grid-template-rows: 3fr; }
+    .main .productDest {
       display: flex;
       flex-direction: row;
-      justify-content: center;
-      h2 {
+      justify-content: center; }
+      .main .productDest h2 {
         text-align: center;
-        font-family: $fontAllPage;
+        font-family: "Open Sans", sans-serif;
         margin-top: 2.5rem;
-        background-color: $background;
-        width: 80%;
-      }
-    }*/ }
+        background-color: #eeeeee;
+        width: 80%; }
     .main .productDestImg {
       display: grid;
       grid-template-columns: auto;
@@ -180,19 +144,17 @@ header {
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
-    /*.productDest {
+    grid-template-rows: 3fr; }
+    .main .productDest {
       display: flex;
       flex-direction: row;
-      justify-content: center;
-      h2 {
+      justify-content: center; }
+      .main .productDest h2 {
         text-align: center;
-        font-family: $fontAllPage;
+        font-family: "Open Sans", sans-serif;
         margin-top: 2.5rem;
-        background-color: $background;
-        width: 80%;
-      }
-    }*/ }
+        background-color: #eeeeee;
+        width: 80%; }
     .main .productDestImg {
       display: grid;
       grid-template-columns: auto;
@@ -238,9 +200,9 @@ header {
       font-style: italic;
       margin-top: 0.5rem; }
   .main .titleEachProduct {
-    /* display: flex;
-            flex-direction: row;
-            justify-content: center; */ }
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
     .main .titleEachProduct h2 {
       text-align: center;
       font-family: "Open Sans", sans-serif;
@@ -295,9 +257,9 @@ header {
       margin-top: 0.5rem;
       text-align: center; }
   .main .titleEachProduct {
-    /* display: flex;
-            flex-direction: row;
-            justify-content: center; */ }
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
     .main .titleEachProduct h2 {
       text-align: center;
       font-family: "Open Sans", sans-serif;
@@ -363,9 +325,9 @@ header {
       margin-left: 0.5rem;
       text-align: center; }
   .main .titleEachProduct {
-    /* display: flex;
-            flex-direction: row;
-            justify-content: center; */ }
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
     .main .titleEachProduct h2 {
       text-align: center;
       font-family: "Open Sans", sans-serif;
@@ -408,26 +370,26 @@ header {
 /*-----------------ESTILOS DE COMO COMPRAR-------------*/
 /*DESKTOP*/
 @media (min-width: 1024px) {
-  .main .howToBuy, .main .divParragrph {
-    /* display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-top: 2.5rem;
-            margin-bottom: 2.5rem;
-            gap: 2.5rem; */ }
-    .main .howToBuy .divParragrph, .main .divParragrph .divParragrph {
-      /* display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                gap: 2rem; */ }
-      .main .howToBuy .divParragrph h2, .main .divParragrph .divParragrph h2 {
+  .main .howToBuy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    gap: 2.5rem; }
+    .main .howToBuy .divParragrph {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 2rem; }
+      .main .howToBuy .divParragrph h2 {
         font-family: "Open Sans", sans-serif;
         font-size: 2rem;
         background-color: #eeeeee;
         border-radius: 15px;
         width: 80%; }
-      .main .howToBuy .divParragrph p, .main .divParragrph .divParragrph p {
+      .main .howToBuy .divParragrph p {
         font-family: "Open Sans", sans-serif;
         text-align: justify;
         font-size: 1.3rem;
@@ -435,26 +397,26 @@ header {
 
 /*TABLET*/
 @media (min-width: 500px) and (max-width: 1023px) {
-  .main .howToBuy, .main .divParragrph {
+  .main .howToBuy {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     gap: 2.5rem; }
-    .main .howToBuy div, .main .divParragrph div {
+    .main .howToBuy div {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       gap: 2rem; }
-      .main .howToBuy div h2, .main .divParragrph div h2 {
+      .main .howToBuy div h2 {
         font-family: "Open Sans", sans-serif;
         font-size: 2rem;
         background-color: #eeeeee;
         border-radius: 15px;
         width: 80%; }
-      .main .howToBuy div p, .main .divParragrph div p {
+      .main .howToBuy div p {
         font-family: "Open Sans", sans-serif;
         text-align: justify;
         font-size: 1.3rem;
@@ -466,26 +428,26 @@ header {
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr; }
-    .main .howToBuy, .main .divParragrph {
+    .main .howToBuy {
       display: flex;
       flex-direction: column;
       justify-content: center;
       margin-top: 2.5rem;
       margin-bottom: 2.5rem;
       gap: 2.5rem; }
-      .main .howToBuy div, .main .divParragrph div {
+      .main .howToBuy div {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 2rem; }
-        .main .howToBuy div h2, .main .divParragrph div h2 {
+        .main .howToBuy div h2 {
           font-family: "Open Sans", sans-serif;
           font-size: 1.5rem;
           background-color: #eeeeee;
           border-radius: 15px;
           width: 80%; }
-        .main .howToBuy div p, .main .divParragrph div p {
+        .main .howToBuy div p {
           font-family: "Open Sans", sans-serif;
           text-align: justify;
           font-size: 1rem;
