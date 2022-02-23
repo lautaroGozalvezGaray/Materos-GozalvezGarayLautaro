@@ -106,7 +106,7 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: 3fr; }
     .main .imgTop {
-      height: 25vh; }
+      height: 34vh; }
     .main .productDest {
       display: flex;
       flex-direction: row;
