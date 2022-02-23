@@ -73,6 +73,7 @@ header {
         font-family: "Open Sans", sans-serif;
         margin-top: 2.5rem;
         background-color: #eeeeee;
+        border-radius: 15px;
         width: 80%; }
     .main .productDestImg {
       display: grid;
@@ -116,6 +117,7 @@ header {
         font-family: "Open Sans", sans-serif;
         margin-top: 2.5rem;
         background-color: #eeeeee;
+        border-radius: 15px;
         width: 80%; }
     .main .productDestImg {
       display: grid;
@@ -160,6 +162,7 @@ header {
         font-family: "Open Sans", sans-serif;
         margin-top: 2.5rem;
         background-color: #eeeeee;
+        border-radius: 15px;
         width: 80%; }
     .main .productDestImg {
       display: grid;
