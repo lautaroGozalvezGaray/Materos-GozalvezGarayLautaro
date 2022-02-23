@@ -62,6 +62,8 @@ header {
 @media (min-width: 1024px) {
   .main {
     grid-area: main; }
+    .main .imgTop {
+      height: 60vh; }
     .main .productDest {
       display: flex;
       flex-direction: row;

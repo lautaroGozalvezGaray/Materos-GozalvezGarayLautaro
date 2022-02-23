@@ -4,7 +4,9 @@
 @media (min-width: 1024px) {
   .main {
     grid-area: main;
-
+    .imgTop {
+      height: 60vh;
+    }
     .productDest {
       display: flex;
       flex-direction: row;
