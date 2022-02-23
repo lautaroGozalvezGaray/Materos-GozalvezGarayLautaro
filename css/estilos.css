@@ -105,6 +105,8 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr; }
+    .main .imgTop {
+      height: 25vh; }
     .main .productDest {
       display: flex;
       flex-direction: row;
@@ -147,6 +149,8 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr; }
+    .main .imgTop {
+      height: 25vh; }
     .main .productDest {
       display: flex;
       flex-direction: row;

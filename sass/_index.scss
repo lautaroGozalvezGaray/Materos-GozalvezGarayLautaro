@@ -56,6 +56,9 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
+    .imgTop {
+      height: 25vh;
+    }
     .productDest {
       display: flex;
       flex-direction: row;
@@ -106,6 +109,9 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
+    .imgTop {
+      height: 25vh;
+    }
     .productDest {
       display: flex;
       flex-direction: row;
