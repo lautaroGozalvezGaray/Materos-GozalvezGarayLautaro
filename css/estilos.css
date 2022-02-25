@@ -63,7 +63,7 @@ header {
   .main {
     grid-area: main; }
     .main .imgTop {
-      height: 60vh; }
+      height: 75vh; }
     .main .productDest {
       display: flex;
       flex-direction: row;
@@ -738,11 +738,13 @@ header {
       margin-bottom: 1rem; }
     footer li {
       display: inline;
-      margin-bottom: 0.9rem; }
+      margin-bottom: 0.9rem;
+      width: 90%; }
       footer li a {
         text-decoration: none;
         color: black;
         font-family: "Open Sans", sans-serif;
+        font-size: 0.8rem;
         padding: 0.9rem; } }
 
 @media (max-width: 500px) {
@@ -755,20 +757,24 @@ header {
     background-color: #d6d6d6; }
     footer p {
       font-family: "Open Sans", sans-serif;
-      margin-top: 1rem;
+      margin-top: 0.8rem;
       margin-bottom: 1rem; }
-    footer li {
+    footer ul {
       display: flex;
       flex-direction: column;
-      margin-bottom: 0.3rem;
-      text-align: center; }
-      footer li a {
-        text-decoration: none;
-        color: black;
-        font-family: "Open Sans", sans-serif;
-        font-size: 0.8rem;
-        padding: 0.9rem; }
-      footer li svg {
-        align-self: center; } }
+      margin-right: 28px; }
+      footer ul li {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.3rem;
+        text-align: center; }
+        footer ul li a {
+          text-decoration: none;
+          color: black;
+          font-family: "Open Sans", sans-serif;
+          font-size: 0.8rem;
+          padding: 0.9rem; }
+        footer ul li svg {
+          align-self: center; } }
 
 /*FIN FOOTER*/
